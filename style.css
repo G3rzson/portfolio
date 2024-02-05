@@ -12,7 +12,7 @@
 /* általános stílusok */
 body{
     color: var(--color);
-    background-image: url(./images/hatter.jpg);
+    background-image: radial-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url(./images/hatter.jpg);
     max-width: 1000px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
