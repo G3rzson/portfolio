@@ -67,11 +67,12 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 1rem 2rem;
     max-width: 500px;
 }
 .content-container img{
     height: 50px;
+    margin: 0.5rem;
 }
 /* Munkák */
 .munkak{
