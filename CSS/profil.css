@@ -1,0 +1,47 @@
+
+.profil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 13rem;
+}
+
+.profil-heading{
+    font-family: var(--font-type);
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+.profil-text{
+    font-family: var(--font-type);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: -2rem;
+}
+.profil-img{
+    width: 300px;
+}
+
+@media screen and (min-width: 600px) {
+    .profil{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .profil{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 1rem;
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .profil{
+        justify-content: center;
+        gap: 10rem;
+    }
+}

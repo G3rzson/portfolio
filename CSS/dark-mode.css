@@ -1,0 +1,49 @@
+
+#dark-mode-toggle{
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    left: 10px;
+    z-index: 10;
+}
+#dark-mode-toggle img{
+    width: 30px;
+    height: 30px;
+}
+
+#dark-mode-toggle img{
+    background-color: transparent;
+}
+/* dark mode */
+body.dark-mode {
+    background-color: var(--black);
+    color: var(--white);
+}
+body.dark-mode .hamburger-lines,
+body.dark-mode .hamburger-lines::before,
+body.dark-mode .hamburger-lines::after{
+    background-color: var(--white);
+}
+body.dark-mode .nav-links{
+    color: var(--white);
+}
+
+body.dark-mode .nav-links:hover{
+    color: orange;
+}
+
+body.dark-mode .menu__box{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (min-width: 600px) {
+    #dark-mode-toggle{
+        top: 5px;
+        left: 30px;
+    }
+}

@@ -3,62 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Névjegy</title>
+    <title>Portfólió</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap"
+          rel="stylesheet">
         
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <nav id="fooldal">
-        <ul class="nav-container">
-            <li class="nav-item"><a href="#fooldal">Főoldal</a></li>
-            <li class="nav-item"><a href="#rolam">Rólam</a></li>
-            <li class="nav-item"><a href="#kapcsolatok">Kapcsolatok</a></li>
-        </ul>
-    </nav>
-
-    <section id="rolam" class="rolam-flexbox">
-        <section class="rolam-container">
-            <h1>Pál Gerzson</h1>
-            <img class="profil-image" src="./images/profil.jpg" alt="Profilkép">
-            <h2 class="megnevezes">Frontend webfejlesztő</h2>
-        </section>
-        <section class="content">
-            <p class="rolam-text">Heló. Karrierváltó vagyok. 
-                Fő szakmám CNC és Cad-Cam programozó volt. 
-                Jeleneleg teljes kapacitásommal dolgozok azon, 
-                hogy frontend webfejlesztő váljon belőlem.
-            </p>
-            <p class="rolam-text">Eddig az alábbiak elsajátításán dolgoztam:</p>
-            <ul class="content-container">
-                <li><img src="./images/icons/html5.svg" alt="html5"></li>
-                <li><img src="./images/icons/css3-alt.svg" alt="css3"></li>
-                <li><img src="./images/icons/js.svg" alt="javascript"></li>
-                <li><img src="./images/icons/bootstrap.svg" alt="bootstrap"></li>
-                <li><img src="./images/icons/figma_icon.png" alt="figma"></li>
-                <li><img src="./images/icons/canva_icon.png" alt="Canva"></li>
-                <li><img src="./images/icons/github.svg" alt="github"></li>
+    <div class="keret">
+        <nav class="menu">
+            <input type="checkbox" name="hamburger" id="menu__toggle">
+            <label for="menu__toggle" class="hamburger-button">
+                <span class="hamburger-lines"></span>
+            </label>
+            <ul class="menu__box">
+                <li class="menu-item"><a class="nav-links" href="#skills">Készségek</a></li>
+                <li class="menu-item"><a class="nav-links" href="#projects">Projectek</a></li>
+                <li class="menu-item"><a class="nav-links" href="#about-me">Rólam</a></li>
+                <li class="menu-item"><a class="nav-links" href="#contacts">Kapcsolatok</a></li>
             </ul>
-        </section>
-    </section>
+        </nav>
 
-    <section class="munkak">
-        <h2>Munkáimat itt tekintheted meg :</h2>
-        <a href="https://github.com/G3rzson?tab=repositories" target="_blank"><img src="./images/icons/github.svg" alt="github"></a>
-    </section>
+        <img class="up-arrow" src="./images/icons/arrow-up-solid.svg" alt="Fel nyil icon">
+        <button id="dark-mode-toggle"></button>
 
-    <footer id="kapcsolatok">
-        <h2>Elérhetőségeim:</h2>
-        <ul class="footer-container">
-            <li><a href="https://www.facebook.com/gerzon.pal.7" target="_blank"><img src="./images/icons/facebook.svg" alt="facebook"></a></li>
-            <li><a href="mailto:gerzonpal@gmail.com" target="_blank"><img src="./images/icons/Email.svg" alt="E-mail"></a></li>
-            <li><a href="#"><img src="./images/icons/linkedin.svg" alt="linkedin"></a></li>
-        </ul>
-    </footer>
+        <main>
+            <section class="profil">
+                <div>
+                    <h1 class="profil-heading">Pál Gerzson</h1>
+                    <h2 class="profil-text">Frontend fejlesztő</h2>         
+                </div>
+                <img class="profil-img" src="./images/profil.png" alt="Profilkép">
+            </section>
+
+            <section id="skills" class="skills">
+                <h2 class="skill-title">Készségeim:</h2>
+                <div class="skill-container">
+                    <div class="scroll">
+                        <img class="skill-icon" src="./images/icons/html5.svg" alt="HTML 5 icon">
+                        <img class="skill-icon" src="./images/icons/css3-alt.svg" alt="CSS 3 icon">
+                        <img class="skill-icon" src="./images/icons/js.svg" alt="JavaScript icon">
+                        <img class="skill-icon" src="./images/icons/bootstrap.svg" alt="Bootstrap icon">
+                        <img class="skill-icon" src="./images/icons/react.svg" alt="React icon">
+                        <img class="skill-icon" src="./images/icons/figma_icon.png" alt="Figma icon">
+                    </div>
+                </div>  
+            </section>
+
+            <section id="projects" class="projectek">
+                <h2>Projektjeim:</h2>
+                <div class="munkak-container">
+                    <a href="https://g3rzson.github.io/barber/" target="_blank"><img class="munkak" src="./images/projectek/barber.png" alt="Borbély oldal"></a>
+                    <a href="https://g3rzson.github.io/Lotto_React/" target="_blank"><img class="munkak" src="./images/projectek/lotto-app.png" alt="Lottó applikáció"></a>
+                </div>
+            </section>
+
+            <section id="about-me" class="rolam">
+                <h2 class="rolam-title">Rólam:</h2>
+                <p class="rolam-text">Heló. Karrierváltó vagyok. Fő szakmám CNC és Cad-Cam programozó volt. Jeleneleg teljes kapacitásommal dolgozok azon, hogy frontend, majd a későbbiekben pedig fullstack webfejlesztő váljon belőlem.</p>
+            </section>
+
+            <section id="contacts" class="contacts">
+                <h2>Kapcsolatok:</h2>
+                <a href="https://github.com/G3rzson?tab=repositories" target="_blank"><img class="kapcsolatok-icon github" src="./images/icons/github.svg" alt="Github icon"></a>
+                <a href="https://www.linkedin.com/in/gerzson-pál-8147312b4/" target="_blank"><img class="kapcsolatok-icon" src="./images/icons/linkedin.svg" alt="LinkedIn icon"></a>
+                <a href="mailto:gerzonpal@gmail.com" target="_blank"><img class="kapcsolatok-icon" src="./images/icons/Email.svg" alt="Email icon"></a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024</p>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

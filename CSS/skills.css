@@ -1,0 +1,21 @@
+
+.skills{
+    padding: 0 1rem;
+    margin-top: 4rem;
+}
+
+.skill-title{
+    margin-top: 2rem;
+}
+
+.skill-icon {
+    height: 60px;
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .skill-icon {
+        height: 100px;
+    }
+}
+
