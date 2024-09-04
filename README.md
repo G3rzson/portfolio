@@ -1,5 +1,5 @@
 
-Előnézet - https://g3rzson.github.io/nevjegy/
+Előnézet - https://g3rzson.github.io/portfolio/
 
 Portfólió oldal 
 
