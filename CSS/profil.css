@@ -16,10 +16,28 @@
     font-family: var(--font-type);
     font-size: 2rem;
     letter-spacing: 0.3rem;
-    margin-bottom: -2rem;
 }
 .profil-img{
     width: 300px;
+    margin-top: -1rem;
+}
+.btn{
+    margin-top: 1rem;
+}
+button{
+    margin: 0 auto;
+    display: block;
+    padding: 1rem;
+    border: 1px solid var(--black);
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 0.2rem;
+}
+.letolt{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 1rem;
 }
 
 @media screen and (min-width: 600px) {
