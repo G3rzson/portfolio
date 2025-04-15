@@ -1,11 +1,11 @@
 
 .skills{
     padding: 0 1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
 .skill-title{
-    margin-top: 2rem;
+    margin: 1rem 0;
 }
 
 .scroll{
@@ -19,4 +19,13 @@
 
 .skill-icon {
     height: 40px;
+}
+
+@media (min-width: 1000px) {
+    .skills{
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
 }
