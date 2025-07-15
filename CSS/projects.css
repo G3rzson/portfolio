@@ -1,34 +1,16 @@
-
-.projectek{
-    margin: 2rem 1rem;
+.projectek {
+  margin: 2rem 1rem;
 }
 
 .munkak-container {
-    display: flex;                
-    flex-direction: row;         
-    max-width: 100%;               
-    overflow-x: auto;             
-    overflow-y: hidden;          
-    white-space: nowrap;         
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .munkak {
-    height: 250px;             
-    width: auto;                
-    margin: 1rem;   
-    border-radius: 5px;       
-}
-
-.munkak-container::-webkit-scrollbar {
-    height: 8px;                   
-}
-
-.munkak-container::-webkit-scrollbar-thumb {
-    background-color: #888;        
-    border-radius: 10px;           
-}
-
-.munkak-container::-webkit-scrollbar-thumb:hover {
-    background-color: #555;  
-    cursor: pointer;      
+  height: 250px;
+  width: auto;
+  margin: 1rem;
+  border-radius: 5px;
 }
