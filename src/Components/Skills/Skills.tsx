@@ -12,7 +12,7 @@ export default function Skills() {
           return (
             <abbr key={skill.title} title={skill.title}>
               <img
-                src={skill.path}
+                src={`${import.meta.env.BASE_URL}${skill.path}`}
                 alt={`${skill.title} icon`}
                 className="h-14 w-fit spin"
               />

@@ -14,7 +14,7 @@ export default function Frontend() {
               <p className="text-center mb-2">{project.title}</p>
               <a href={project.path} target="_blank">
                 <img
-                  src={project.imgSrc}
+                  src={`${import.meta.env.BASE_URL}${project.imgSrc}`}
                   alt={`${project.title} icon`}
                   className="h-20 sm:h-52 w-fit"
                 />

@@ -10,7 +10,11 @@ export default function Content() {
         className="bg-cyan-500 hover:bg-cyan-400 cursor-pointer duration-300 w-fit p-4 rounded-md flex flex-row-reverse gap-4 items-center justify-center"
       >
         Önéletrajz
-        <img src="/icons/download.svg" alt="nyíl" width={24} />
+        <img
+          src={`${import.meta.env.BASE_URL}icons/download.svg`}
+          alt="nyíl"
+          width={24}
+        />
       </a>
     </div>
   );

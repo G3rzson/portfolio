@@ -18,7 +18,7 @@ export default function Contacts() {
               <p className="text-center mb-2">{contact.title}</p>
               <a href={contact.path} target="_blank">
                 <img
-                  src={contact.imgSrc}
+                  src={`${import.meta.env.BASE_URL}${contact.imgSrc}`}
                   alt={`${contact.title} icon`}
                   className="h-12  w-fit"
                 />
