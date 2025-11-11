@@ -1,0 +1,16 @@
+export const SKILL_LIST = [
+  { path: "/skills/html.svg", title: "HTML" },
+  { path: "/skills/css.svg", title: "CSS" },
+  { path: "/skills/bootstrap.svg", title: "Bootstrap" },
+  { path: "/skills/tailwind.svg", title: "Tailwind" },
+  { path: "/skills/javascript.svg", title: "Javascript" },
+  { path: "/skills/typescript.svg", title: "Typescript" },
+  { path: "/skills/react.svg", title: "React" },
+  { path: "/skills/nextjs.png", title: "NextJs" },
+  { path: "/skills/nodejs.png", title: "NodeJs" },
+  { path: "/skills/mongodb.png", title: "MongoDB" },
+  { path: "/skills/sqlite.png", title: "Sqlite" },
+  { path: "/skills/mysql.svg", title: "MySQL" },
+  { path: "/skills/prisma.png", title: "Prisma" },
+  { path: "/skills/git.svg", title: "Git" },
+];
