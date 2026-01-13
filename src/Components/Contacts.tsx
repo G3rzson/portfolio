@@ -1,21 +1,17 @@
-import { CONTACTS } from "./contact";
+import { CONTACTS } from "../Constants/Constants";
 
 export default function Contacts() {
   return (
     <div
       id="contacts"
-      className="w-full sm:w-4/5 mx-0 sm:mx-auto px-4 sm:px-0 pt-24"
+      className="w-full sm:w-4/5 sm:mx-auto mb-12 flex sm:flex-row flex-col justify-start items-center gap-8"
     >
       <h2 className="text-2xl">Kapcsolatok:</h2>
 
-      <div className="flex flex-row flex-wrap justify-center items-center gap-4 my-8">
+      <div className="flex flex-row flex-wrap justify-center items-center gap-8">
         {CONTACTS.map((contact) => {
           return (
-            <div
-              key={contact.title}
-              className="flex items-center justify-center flex-col"
-            >
-              <p className="text-center mb-2">{contact.title}</p>
+            <abbr key={contact.title} title={contact.title}>
               <a href={contact.path} target="_blank">
                 <img
                   src={`${import.meta.env.BASE_URL}${contact.imgSrc}`}
@@ -23,7 +19,7 @@ export default function Contacts() {
                   className="h-12  w-fit"
                 />
               </a>
-            </div>
+            </abbr>
           );
         })}
       </div>

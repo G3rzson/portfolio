@@ -1,4 +1,4 @@
-import { SKILL_LIST } from "./skill_list";
+import { SKILL_LIST } from "../../Constants/Constants";
 
 export default function Skills() {
   return (
@@ -14,7 +14,7 @@ export default function Skills() {
               <img
                 src={`${import.meta.env.BASE_URL}${skill.path}`}
                 alt={`${skill.title} icon`}
-                className="h-14 w-fit spin"
+                className="h-14 w-fit"
               />
             </abbr>
           );
