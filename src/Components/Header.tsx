@@ -7,7 +7,7 @@ export default function Header() {
   const [firstLoad, setFirstLoad] = useState(true);
 
   return (
-    <header className="bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 w-full fixed top-0 z-10">
+    <header className="bg-zinc-200/20 dark:bg-zinc-900/20 backdrop-blur-xl text-zinc-900 dark:text-zinc-100 w-full fixed top-0 z-10">
       <div className="flex items-center justify-between flex-col sm:flex-row w-full sm:w-4/5 mx-0 sm:mx-auto">
         {/* Logó */}
         <a

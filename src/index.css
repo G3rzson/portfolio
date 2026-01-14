@@ -25,6 +25,18 @@ html {
   display: none;
 }
 
+.main-image {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(public/bg-sm.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: calc(100svh - var(--header-scroll-offset));
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
