@@ -41,16 +41,21 @@ export default function Projects() {
                 </button>
               </div>
 
-              <ul className="mt-3 flex flex-wrap gap-2">
-                {project.tech.map((tech) => (
-                  <li
-                    key={tech}
-                    className="text-xs font-medium px-2 py-1 rounded-full bg-cyan-600/20 text-cyan-900 dark:bg-cyan-400/15 dark:text-cyan-200"
-                  >
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+              <div className="flex flex-row items-center justify-between mt-4">
+                <p className="text-xs font-medium px-2 py-1 rounded-full bg-cyan-600/20 text-cyan-900 dark:bg-cyan-400/15 dark:text-cyan-200">
+                  {project.type}
+                </p>
+                <ul className="flex flex-wrap gap-2">
+                  {project.tech.map((tech) => (
+                    <li
+                      key={tech}
+                      className="text-xs font-medium px-2 py-1 rounded-full bg-cyan-600/20 text-cyan-900 dark:bg-cyan-400/15 dark:text-cyan-200"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
               {/* Animált collapse */}
               <div

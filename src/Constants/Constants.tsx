@@ -39,7 +39,7 @@ export const PROJECTS = [
     preview: "https://g3rzson.github.io/frontend_barber_page/",
     sourceLink: "https://github.com/G3rzson/frontend_barber_page",
     title: "BarbeR Landing Page",
-    type: "frontend",
+    type: "Frontend",
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     description:
       "Reszponzív, szekciókra bontott landing page borbélyszalonnak; fókusz a mobilbarát layouton, a UI-részleteken és a tiszta, gyors betöltésen (GitHub Pages demo).",
@@ -49,7 +49,7 @@ export const PROJECTS = [
     preview: "https://g3rzson.github.io/frontend_todo_app/",
     sourceLink: "https://github.com/G3rzson/frontend_todo_app",
     title: "Todo App",
-    type: "frontend",
+    type: "Frontend",
     tech: ["HTML", "CSS", "Vanilla JavaScript"],
     description:
       "To-Do alkalmazás CRUD műveletekkel (megjelenítés / létrehozás / szerkesztés / törlés); reszponzív UI és átlátható állapotkezelés Vanilla JS-ben (GitHub Pages demo).",
@@ -58,7 +58,7 @@ export const PROJECTS = [
   {
     sourceLink: "https://github.com/G3rzson/galery",
     title: "Galéria app",
-    type: "fullstack",
+    type: "Fullstack",
     tech: ["React", "NodeJs", "Express", "MongoDB", "Mongoose"],
     description:
       "Full-stack galéria app képfeltöltéssel, megtekintéssel és kezelésre fókuszáló funkciókkal; React kliens + Express API + MongoDB perzisztencia (részletek a repo README-ben).",
