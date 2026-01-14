@@ -8,13 +8,14 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="w-full sm:w-4/5 mx-0 sm:mx-auto sm:p-0 p-2 mb-10"
+      className="pt-28 sm:pt-24 w-full sm:w-4/5 mx-0 sm:mx-auto sm:px-0 px-2"
     >
       {/* projektek */}
-      <h2 className="text-2xl mb-8 text-center sm:text-start">Projektek:</h2>
+      <h2 className="text-2xl text-center sm:text-start mb-8">Projektek:</h2>
       <ul className="flex flex-col gap-4">
         {PROJECTS.map((project, index) => {
           const isOpen = openIndex === index;
+          const detailsId = `project-details-${index}`;
 
           return (
             <li
@@ -28,6 +29,9 @@ export default function Projects() {
                 </h3>
 
                 <button
+                  type="button"
+                  aria-expanded={isOpen}
+                  aria-controls={detailsId}
                   onClick={() =>
                     setOpenIndex((prev) => (prev === index ? null : index))
                   }
@@ -37,25 +41,48 @@ export default function Projects() {
                 </button>
               </div>
 
+              <ul className="mt-3 flex flex-wrap gap-2">
+                {project.tech.map((tech) => (
+                  <li
+                    key={tech}
+                    className="text-xs font-medium px-2 py-1 rounded-full bg-cyan-600/20 text-cyan-900 dark:bg-cyan-400/15 dark:text-cyan-200"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+
               {/* Animált collapse */}
               <div
+                id={detailsId}
                 className={`${
                   isOpen ? "max-h-96 opacity-100 mt-4" : "max-h-0 opacity-0"
                 } overflow-hidden transition-all duration-300 ease-in-out flex flex-col gap-4`}
               >
-                <p>Leírás: {project.description}</p>
+                <p>
+                  <span className="underline">Leírás:</span>{" "}
+                  {project.description}
+                </p>
 
-                <a href={project.sourceLink} target="_blank">
-                  Ugrás a forráskódhoz:{" "}
+                <a
+                  href={project.sourceLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="underline">Ugrás a forráskódhoz:</span>{" "}
                   <span className=" dark:hover:text-cyan-400 hover:text-cyan-600 duration-300">
                     {project.sourceLink}
                   </span>
                 </a>
 
                 {project.preview && (
-                  <a href={project.preview} target="_blank">
-                    Github Pages előnézet:{" "}
-                    <span className=" dark:hover:text-cyan-400 hover:text-cyan-600 duration-300">
+                  <a
+                    href={project.preview}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="underline">Github Pages előnézet:</span>{" "}
+                    <span className="dark:hover:text-cyan-400 hover:text-cyan-600 duration-300">
                       {project.preview}
                     </span>
                   </a>

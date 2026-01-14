@@ -1,16 +1,19 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { MEDIA_SRC_LINKS, NAV_LINKS } from "../../Constants/Constants";
+import { MEDIA_SRC_LINKS, NAV_LINKS } from "../Constants/Constants";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [firstLoad, setFirstLoad] = useState(true);
 
   return (
-    <header className="bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 fixed w-full z-10">
+    <header className="bg-zinc-200 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 w-full fixed top-0 z-10">
       <div className="flex items-center justify-between flex-col sm:flex-row w-full sm:w-4/5 mx-0 sm:mx-auto">
         {/* Logó */}
-        <a href="/" className="flex items-center justify-center gap-2 p-4">
+        <a
+          href="#aboutme"
+          className="flex items-center justify-center gap-2 p-4"
+        >
           <img
             src={MEDIA_SRC_LINKS.logo.src}
             alt={MEDIA_SRC_LINKS.logo.alt}
