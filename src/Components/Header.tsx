@@ -30,6 +30,9 @@ export default function Header() {
             setOpen(!open);
             setFirstLoad(false);
           }}
+          aria-label="Menu toggle"
+          aria-expanded={open}
+          aria-controls="nav"
           className="border-none outline-none absolute right-4 top-4 sm:hidden p-2 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
         >
           <div
@@ -43,6 +46,7 @@ export default function Header() {
 
         {/* Navigáció */}
         <nav
+          id="nav"
           className={`${
             firstLoad ? "hide" : open ? "nav-open" : "nav-closed"
           } flex justify-center items-center flex-col sm:flex-row`}

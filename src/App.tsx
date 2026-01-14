@@ -9,10 +9,12 @@ export default function App() {
   return (
     <>
       <Header />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Contacts />
+      <main className="pt-(--header-scroll-offset) flex flex-col gap-12">
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <Contacts />
+      </main>
       <Footer />
     </>
   );

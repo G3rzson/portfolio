@@ -1,7 +1,16 @@
 @import "tailwindcss";
 
+:root {
+  --header-scroll-offset: 7rem;
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--header-scroll-offset);
+}
+
+:where([id]) {
+  scroll-margin-top: var(--header-scroll-offset);
 }
 
 .nav-open {
@@ -39,6 +48,10 @@ html {
 }
 
 @media (min-width: 640px) {
+  :root {
+    --header-scroll-offset: 5rem;
+  }
+
   .nav-open,
   .nav-closed {
     animation: none !important;

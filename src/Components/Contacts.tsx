@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <div
       id="contacts"
-      className="pt-28 sm:pt-24 w-full sm:w-4/5 sm:mx-auto flex sm:flex-row flex-col justify-start items-center gap-8"
+      className="w-full sm:w-4/5 sm:mx-auto flex sm:flex-row flex-col justify-start items-center gap-8"
     >
       <h2 className="text-2xl text-center sm:text-start">Kapcsolatok:</h2>
 

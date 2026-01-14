@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <div
       id="aboutme"
-      className="pt-28 sm:pt-24 w-full sm:w-4/5 mx-0 sm:mx-auto gap-8 flex justify-between items-center flex-col sm:flex-row"
+      className="w-full sm:w-4/5 mx-0 sm:mx-auto gap-8 flex justify-between items-center flex-col sm:flex-row"
     >
       {/* bemutatkozás */}
       <div className="flex flex-col items-center justify-center gap-8">

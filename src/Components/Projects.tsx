@@ -6,10 +6,7 @@ export default function Projects() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div
-      id="projects"
-      className="pt-28 sm:pt-24 w-full sm:w-4/5 mx-0 sm:mx-auto sm:px-0 px-2"
-    >
+    <div id="projects" className="w-full sm:w-4/5 mx-0 sm:mx-auto sm:px-0 px-2">
       {/* projektek */}
       <h2 className="text-2xl text-center sm:text-start mb-8">Projektek:</h2>
       <ul className="flex flex-col gap-4">
@@ -41,11 +38,11 @@ export default function Projects() {
                 </button>
               </div>
 
-              <div className="flex flex-row items-center justify-between mt-4">
+              <div className="flex sm:flex-row flex-col gap-4 items-center justify-between mt-4">
                 <p className="text-xs font-medium px-2 py-1 rounded-full bg-cyan-600/20 text-cyan-900 dark:bg-cyan-400/15 dark:text-cyan-200">
                   {project.type}
                 </p>
-                <ul className="flex flex-wrap gap-2">
+                <ul className="flex flex-wrap justify-center gap-2">
                   {project.tech.map((tech) => (
                     <li
                       key={tech}
