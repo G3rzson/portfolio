@@ -7,7 +7,7 @@ export const NAV_LINKS = [
 
 export const MEDIA_SRC_LINKS = {
   logo: { src: "favicon.png", alt: "Logó" },
-  profileImg: { src: "profil_2.png", alt: "Profilkép" },
+  profileImg: { src: "og.png", alt: "Profilkép" },
   downloadIcon: { src: "icons/download.svg", alt: "Letöltés ikon" },
   cv: { src: "file/PG.pdf" },
   github: { src: "contacts/github.svg", alt: "Github" },

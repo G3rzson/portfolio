@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --header-scroll-offset: 7rem;
+  --header-scroll-offset: 3rem;
 }
 
 html {
@@ -49,7 +49,7 @@ html {
 
 @media (min-width: 640px) {
   :root {
-    --header-scroll-offset: 5rem;
+    --header-scroll-offset: 3rem;
   }
 
   .nav-open,

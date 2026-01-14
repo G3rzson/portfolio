@@ -2,36 +2,26 @@ import { MEDIA_SRC_LINKS } from "../Constants/Constants";
 
 export default function AboutMe() {
   return (
-    <div
-      id="aboutme"
-      className="w-full sm:w-4/5 mx-0 sm:mx-auto gap-8 flex justify-between items-center flex-col sm:flex-row"
-    >
-      {/* bemutatkozás */}
-      <div className="flex flex-col items-center justify-center gap-8">
-        <h1 className="text-4xl">Pál Gerzson</h1>
-        <h2 className="text-2xl">Full-Stack webfejlesztő</h2>
-
-        <a
-          href={MEDIA_SRC_LINKS.cv.src}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-cyan-500 hover:bg-cyan-400 cursor-pointer duration-300 text-black w-fit p-4 rounded-md flex flex-row-reverse gap-4 items-center justify-center"
-        >
-          Önéletrajz
-          <img
-            src={MEDIA_SRC_LINKS.downloadIcon.src}
-            alt={MEDIA_SRC_LINKS.downloadIcon.alt}
-            width={24}
-          />
-        </a>
-      </div>
-
-      {/* profilkép */}
+    <div id="aboutme" className="relative mt-6">
       <img
         src={MEDIA_SRC_LINKS.profileImg.src}
         alt={MEDIA_SRC_LINKS.profileImg.alt}
-        className="h-80 w-fit"
+        className="w-full"
       />
+
+      <a
+        href={MEDIA_SRC_LINKS.cv.src}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-cyan-500 hover:bg-cyan-400 cursor-pointer duration-300 text-black w-fit p-2 rounded-md flex flex-row-reverse gap-4 items-center justify-center absolute bottom-1 left-1/2 transform -translate-x-1/2"
+      >
+        Önéletrajz
+        <img
+          src={MEDIA_SRC_LINKS.downloadIcon.src}
+          alt={MEDIA_SRC_LINKS.downloadIcon.alt}
+          width={16}
+        />
+      </a>
     </div>
   );
 }
