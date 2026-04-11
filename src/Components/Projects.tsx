@@ -83,7 +83,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="underline">Github Pages előnézet:</span>{" "}
+                    <span className="underline">Előnézet:</span>{" "}
                     <span className="dark:hover:text-cyan-400 hover:text-cyan-600 duration-300">
                       {project.preview}
                     </span>

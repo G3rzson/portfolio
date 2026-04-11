@@ -10,10 +10,7 @@ export default function Header() {
     <header className="bg-zinc-200/20 dark:bg-zinc-900/20 backdrop-blur-xl text-zinc-900 dark:text-zinc-100 w-full fixed top-0 z-10">
       <div className="flex items-center justify-between flex-col sm:flex-row w-full sm:w-4/5 mx-0 sm:mx-auto">
         {/* Logó */}
-        <a
-          href="#aboutme"
-          className="flex items-center justify-center gap-2 p-4"
-        >
+        <a href="/" className="flex items-center justify-center gap-2 p-4">
           <img
             src={MEDIA_SRC_LINKS.logo.src}
             alt={MEDIA_SRC_LINKS.logo.alt}

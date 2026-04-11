@@ -18,41 +18,121 @@ export const MEDIA_SRC_LINKS = {
 };
 
 export const SKILL_LIST = [
-  { path: "/skills/html.svg", title: "HTML" },
-  { path: "/skills/css.svg", title: "CSS" },
-  { path: "/skills/bootstrap.svg", title: "Bootstrap" },
-  { path: "/skills/tailwind.svg", title: "Tailwind" },
-  { path: "/skills/javascript.svg", title: "Javascript" },
-  { path: "/skills/typescript.svg", title: "Typescript" },
-  { path: "/skills/react.svg", title: "React" },
-  { path: "/skills/nextjs.png", title: "NextJs" },
-  { path: "/skills/nodejs.png", title: "NodeJs" },
-  { path: "/skills/mongodb.png", title: "MongoDB" },
-  { path: "/skills/sqlite.png", title: "Sqlite" },
-  { path: "/skills/mysql.svg", title: "MySQL" },
-  { path: "/skills/prisma.png", title: "Prisma" },
-  { path: "/skills/git.svg", title: "Git" },
+  {
+    title: "Programozási nyelvek",
+    skills: [
+      { path: "/skills/javascript.svg", title: "Javascript" },
+      { path: "/skills/typescript.svg", title: "Typescript" },
+    ],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      { path: "/skills/html.svg", title: "HTML" },
+      { path: "/skills/react.svg", title: "React" },
+    ],
+  },
+  {
+    title: "UI / Styling",
+    skills: [
+      { path: "/skills/css.svg", title: "CSS" },
+      { path: "/skills/bootstrap.svg", title: "Bootstrap" },
+      { path: "/skills/tailwind.svg", title: "Tailwind" },
+      { path: "/skills/shadcn.svg", title: "Shadcn UI" },
+    ],
+  },
+
+  {
+    title: "Fullstack Framework",
+    skills: [{ path: "/skills/nextjs.png", title: "NextJs" }],
+  },
+  {
+    title: "Backend",
+    skills: [
+      { path: "/skills/nodejs.png", title: "NodeJs" },
+      { path: "/skills/express.svg", title: "Express" },
+    ],
+  },
+
+  {
+    title: "Adatbázisok & ORM & ODM",
+    skills: [
+      { path: "/skills/mongodb.png", title: "MongoDB" },
+      { path: "/skills/mongoose.svg", title: "Mongoose" },
+      { path: "/skills/sqlite.png", title: "SQLite" },
+      { path: "/skills/mysql.svg", title: "MySQL" },
+      { path: "/skills/prisma.png", title: "Prisma" },
+    ],
+  },
+  {
+    title: "Tesztelés",
+    skills: [
+      { path: "/skills/vitest.svg", title: "Vitest" },
+      { path: "/skills/testing-library.svg", title: "Testing Library" },
+    ],
+  },
+  {
+    title: "Fejlesztési eszközök & felhőszolgáltatók",
+    skills: [
+      { path: "/skills/git.svg", title: "Git" },
+      { path: "/skills/github.svg", title: "GitHub" },
+      { path: "/skills/vercel.svg", title: "Vercel" },
+      { path: "/skills/railway.svg", title: "Railway" },
+      { path: "/skills/cloudinary.svg", title: "Cloudinary" },
+    ],
+  },
 ];
 
 export const PROJECTS = [
   {
-    preview: "https://g3rzson.github.io/frontend_barber_page/",
+    preview: "https://frontend-barber-page.vercel.app",
     sourceLink: "https://github.com/G3rzson/frontend_barber_page",
     title: "BarbeR Landing Page",
     type: "Frontend",
-    tech: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "Vercel"],
     description:
-      "Reszponzív, szekciókra bontott landing page borbélyszalonnak; fókusz a mobilbarát layouton, a UI-részleteken és a tiszta, gyors betöltésen (GitHub Pages demo).",
+      "Reszponzív, szekciókra bontott landing page borbélyszalonnak, fókusz a mobilbarát layouton, a UI-részleteken és a tiszta, gyors betöltésen.",
   },
 
   {
-    preview: "https://g3rzson.github.io/frontend_todo_app/",
-    sourceLink: "https://github.com/G3rzson/frontend_todo_app",
-    title: "Todo App",
+    preview: "https://frontend-photographer.vercel.app",
+    sourceLink: "https://github.com/G3rzson/frontend_photographer",
+    title: "Photographer Landing Page",
     type: "Frontend",
-    tech: ["HTML", "CSS", "Vanilla JavaScript"],
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind",
+      "Shadcn UI",
+      "NextJs",
+      "Vitest",
+      "Testing Library",
+      "Vercel",
+    ],
     description:
-      "To-Do alkalmazás CRUD műveletekkel (megjelenítés / létrehozás / szerkesztés / törlés); reszponzív UI és átlátható állapotkezelés Vanilla JS-ben (GitHub Pages demo).",
+      "Reszponzív, oldalakra bontott portfólió fotósoknak, fókusz a mobilbarát layouton, a UI-részleteken és a tiszta, gyors betöltésen.",
+  },
+
+  {
+    preview: "https://fullstack-pizzeria-app.vercel.app",
+    sourceLink: "https://github.com/G3rzson/fullstack_pizzeria_app",
+    title: "Pizzéria app",
+    type: "Fullstack",
+    tech: [
+      "Nextjs",
+      "Prisma",
+      "MySQL",
+      "Tailwind",
+      "Shadcn UI",
+      "Vitest",
+      "Testing Library",
+      "Vercel",
+      "Railway",
+      "Cloudinary",
+    ],
+    description:
+      "Full-stack pizzéria app rendelési és admin funkciókkal, Nextjs kliens + Server Actions / API Routes + MySQL perzisztencia (részletek a repo README-ben).",
   },
 
   {
