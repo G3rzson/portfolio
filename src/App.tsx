@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import AboutMe from "./Components/AboutMe";
 import Contacts from "./Components/Contacts";
 import Footer from "./Components/Footer";
@@ -7,6 +8,21 @@ import Skills from "./Components/Skills";
 import { MEDIA_SRC_LINKS } from "./Constants/Constants";
 
 export default function App() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowScrollTop(window.scrollY > 120);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
   return (
     <div className="relative">
       <Header />
@@ -20,7 +36,12 @@ export default function App() {
 
       <a
         href="#aboutme"
-        className="group fixed bottom-4 right-4 w-12 h-12 z-10 flex items-center justify-center rounded-full bg-cyan-400 dark:bg-cyan-800 hover:bg-cyan-500 dark:hover:bg-cyan-600 transition-colors duration-300"
+        className={`group fixed bottom-4 right-4 w-12 h-12 z-10 flex items-center justify-center rounded-full bg-cyan-400 dark:bg-cyan-800 hover:bg-cyan-500 dark:hover:bg-cyan-600 transition-all duration-300 ${
+          showScrollTop
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 translate-y-2 pointer-events-none"
+        }`}
+        aria-hidden={!showScrollTop}
       >
         <img
           src={MEDIA_SRC_LINKS.arrowUp.src}
