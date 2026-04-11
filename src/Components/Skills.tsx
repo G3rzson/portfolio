@@ -18,8 +18,10 @@ export default function Skills() {
                   <img
                     title={subSkill.title}
                     key={subSkill.title}
-                    src={`${import.meta.env.BASE_URL}${subSkill.path}`}
+                    src={subSkill.path}
                     alt={`${subSkill.title} icon`}
+                    loading="lazy"
+                    decoding="async"
                     className="h-6 md:h-10 w-fit transition-all duration-300 ease-out hover:scale-110 hover:drop-shadow-lg"
                   />
                 ))}

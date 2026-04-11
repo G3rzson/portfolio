@@ -14,8 +14,10 @@ export default function Contacts() {
             <abbr key={contact.title} title={contact.title}>
               <a href={contact.path} target="_blank" rel="noopener noreferrer">
                 <img
-                  src={`${import.meta.env.BASE_URL}${contact.imgSrc}`}
+                  src={contact.imgSrc}
                   alt={`${contact.title} icon`}
+                  loading="lazy"
+                  decoding="async"
                   className="h-12  w-fit"
                 />
               </a>
