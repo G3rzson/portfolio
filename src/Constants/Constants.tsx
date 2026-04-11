@@ -1,3 +1,6 @@
+const resolvePublicAsset = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+
 export const NAV_LINKS = [
   { title: "Rólam", path: "#aboutme" },
   { title: "Készségeim", path: "#skills" },
@@ -6,79 +9,105 @@ export const NAV_LINKS = [
 ];
 
 export const MEDIA_SRC_LINKS = {
-  logo: { src: "favicon.png", alt: "Logó" },
-  profileImg: { src: "profil_2.png", alt: "Profilkép" },
-  downloadIcon: { src: "icons/download.svg", alt: "Letöltés ikon" },
-  cv: { src: "file/PG.pdf" },
-  github: { src: "contacts/github.svg", alt: "Github" },
-  facebook: { src: "contacts/facebook.svg", alt: "Facebook" },
-  linkedin: { src: "contacts/linkedin.svg", alt: "Linkedin" },
-  email: { src: "contacts/email.svg", alt: "Email" },
-  arrowUp: { src: "icons/arrow-up-solid.svg", alt: "Fel nyíl" },
+  logo: { src: resolvePublicAsset("favicon.png"), alt: "Logó" },
+  profileImg: { src: resolvePublicAsset("profil_2.png"), alt: "Profilkép" },
+  downloadIcon: {
+    src: resolvePublicAsset("icons/download.svg"),
+    alt: "Letöltés ikon",
+  },
+  cv: { src: resolvePublicAsset("file/PG.pdf") },
+  github: { src: resolvePublicAsset("contacts/github.svg"), alt: "Github" },
+  facebook: {
+    src: resolvePublicAsset("contacts/facebook.svg"),
+    alt: "Facebook",
+  },
+  linkedin: {
+    src: resolvePublicAsset("contacts/linkedin.svg"),
+    alt: "Linkedin",
+  },
+  email: { src: resolvePublicAsset("contacts/email.svg"), alt: "Email" },
+  arrowUp: {
+    src: resolvePublicAsset("icons/arrow-up-solid.svg"),
+    alt: "Fel nyíl",
+  },
 };
 
 export const SKILL_LIST = [
   {
     title: "Programozási nyelvek",
     skills: [
-      { path: "/skills/javascript.svg", title: "Javascript" },
-      { path: "/skills/typescript.svg", title: "Typescript" },
+      {
+        path: resolvePublicAsset("skills/javascript.svg"),
+        title: "Javascript",
+      },
+      {
+        path: resolvePublicAsset("skills/typescript.svg"),
+        title: "Typescript",
+      },
     ],
   },
   {
     title: "Frontend",
     skills: [
-      { path: "/skills/html.svg", title: "HTML" },
-      { path: "/skills/react.svg", title: "React" },
+      { path: resolvePublicAsset("skills/html.svg"), title: "HTML" },
+      { path: resolvePublicAsset("skills/react.svg"), title: "React" },
     ],
   },
   {
     title: "UI / Styling",
     skills: [
-      { path: "/skills/css.svg", title: "CSS" },
-      { path: "/skills/bootstrap.svg", title: "Bootstrap" },
-      { path: "/skills/tailwind.svg", title: "Tailwind" },
-      { path: "/skills/shadcn.svg", title: "Shadcn UI" },
+      { path: resolvePublicAsset("skills/css.svg"), title: "CSS" },
+      { path: resolvePublicAsset("skills/bootstrap.svg"), title: "Bootstrap" },
+      { path: resolvePublicAsset("skills/tailwind.svg"), title: "Tailwind" },
+      { path: resolvePublicAsset("skills/shadcn.svg"), title: "Shadcn UI" },
     ],
   },
 
   {
     title: "Fullstack Framework",
-    skills: [{ path: "/skills/nextjs.png", title: "NextJs" }],
+    skills: [
+      { path: resolvePublicAsset("skills/nextjs.png"), title: "NextJs" },
+    ],
   },
   {
     title: "Backend",
     skills: [
-      { path: "/skills/nodejs.png", title: "NodeJs" },
-      { path: "/skills/express.svg", title: "Express" },
+      { path: resolvePublicAsset("skills/nodejs.png"), title: "NodeJs" },
+      { path: resolvePublicAsset("skills/express.svg"), title: "Express" },
     ],
   },
 
   {
     title: "Adatbázisok & ORM & ODM",
     skills: [
-      { path: "/skills/mongodb.png", title: "MongoDB" },
-      { path: "/skills/mongoose.svg", title: "Mongoose" },
-      { path: "/skills/sqlite.png", title: "SQLite" },
-      { path: "/skills/mysql.svg", title: "MySQL" },
-      { path: "/skills/prisma.png", title: "Prisma" },
+      { path: resolvePublicAsset("skills/mongodb.png"), title: "MongoDB" },
+      { path: resolvePublicAsset("skills/mongoose.svg"), title: "Mongoose" },
+      { path: resolvePublicAsset("skills/sqlite.png"), title: "SQLite" },
+      { path: resolvePublicAsset("skills/mysql.svg"), title: "MySQL" },
+      { path: resolvePublicAsset("skills/prisma.png"), title: "Prisma" },
     ],
   },
   {
     title: "Tesztelés",
     skills: [
-      { path: "/skills/vitest.svg", title: "Vitest" },
-      { path: "/skills/testing-library.svg", title: "Testing Library" },
+      { path: resolvePublicAsset("skills/vitest.svg"), title: "Vitest" },
+      {
+        path: resolvePublicAsset("skills/testing-library.svg"),
+        title: "Testing Library",
+      },
     ],
   },
   {
     title: "Fejlesztési eszközök & felhőszolgáltatók",
     skills: [
-      { path: "/skills/git.svg", title: "Git" },
-      { path: "/skills/github.svg", title: "GitHub" },
-      { path: "/skills/vercel.svg", title: "Vercel" },
-      { path: "/skills/railway.svg", title: "Railway" },
-      { path: "/skills/cloudinary.svg", title: "Cloudinary" },
+      { path: resolvePublicAsset("skills/git.svg"), title: "Git" },
+      { path: resolvePublicAsset("skills/github.svg"), title: "GitHub" },
+      { path: resolvePublicAsset("skills/vercel.svg"), title: "Vercel" },
+      { path: resolvePublicAsset("skills/railway.svg"), title: "Railway" },
+      {
+        path: resolvePublicAsset("skills/cloudinary.svg"),
+        title: "Cloudinary",
+      },
     ],
   },
 ];
