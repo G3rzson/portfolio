@@ -8,12 +8,13 @@ Personal portfolio website.
 - Fixed header with smooth scroll anchor navigation
 - Expandable project details
 - SEO / Open Graph meta tags for sharing previews
+- Animated elements with Motion
 
 ## Technologies
 
-- React + TypeScript
-- Vite
+- React (Vite) + TypeScript
 - Tailwind CSS
+- Motion
 
 ## Notes
 
