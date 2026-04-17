@@ -60,6 +60,7 @@ export const SKILL_LIST = [
       { path: resolvePublicAsset("skills/bootstrap.svg"), title: "Bootstrap" },
       { path: resolvePublicAsset("skills/tailwind.svg"), title: "Tailwind" },
       { path: resolvePublicAsset("skills/shadcn.svg"), title: "Shadcn UI" },
+      { path: resolvePublicAsset("skills/motion.svg"), title: "Motion" },
     ],
   },
 
@@ -165,7 +166,7 @@ export const PROJECTS = [
   },
 
   {
-    sourceLink: "https://github.com/G3rzson/galery",
+    sourceLink: "https://github.com/G3rzson/fullstack_gallery_app",
     title: "Galéria app",
     type: "Fullstack",
     tech: ["React", "NodeJs", "Express", "MongoDB", "Mongoose"],

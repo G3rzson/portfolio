@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { CONTACTS } from "../Constants/Constants";
 
 export default function Contacts() {
@@ -8,23 +9,33 @@ export default function Contacts() {
     >
       <h2 className="text-2xl text-center sm:text-start">Kapcsolatok:</h2>
 
-      <div className="flex flex-row flex-wrap justify-center items-center gap-8">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="flex flex-row flex-wrap justify-center items-center gap-8"
+      >
         {CONTACTS.map((contact) => {
           return (
-            <abbr key={contact.title} title={contact.title}>
-              <a href={contact.path} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={contact.imgSrc}
-                  alt={`${contact.title} icon`}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-12  w-fit"
-                />
-              </a>
-            </abbr>
+            <a
+              key={contact.title}
+              title={contact.title}
+              href={contact.path}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={contact.imgSrc}
+                alt={`${contact.title} icon`}
+                loading="lazy"
+                decoding="async"
+                className="h-12  w-fit"
+              />
+            </a>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 }

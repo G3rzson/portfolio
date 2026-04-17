@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { PROJECTS } from "../Constants/Constants";
 import { Menu, X } from "lucide-react";
+import { motion } from "motion/react";
 
 export default function Projects() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <div id="projects" className="w-full sm:w-4/5 mx-0 sm:mx-auto sm:px-0 px-2">
-      {/* projektek */}
       <h2 className="text-2xl text-center sm:text-start mb-8">Projektek:</h2>
       <ul className="flex flex-col gap-4">
         {PROJECTS.map((project, index) => {
@@ -15,8 +15,12 @@ export default function Projects() {
           const detailsId = `project-details-${index}`;
 
           return (
-            <li
+            <motion.li
               key={project.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5 }}
               className="dark:bg-zinc-950 bg-zinc-300 w-full p-4 rounded-lg"
             >
               {/* Projekt címsor és gomb */}
@@ -90,7 +94,7 @@ export default function Projects() {
                   </a>
                 )}
               </div>
-            </li>
+            </motion.li>
           );
         })}
       </ul>

@@ -27,7 +27,7 @@ html {
 
 .main-image {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+    linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     url("./assets/bg-sm.png");
   background-size: cover;
   background-position: center;

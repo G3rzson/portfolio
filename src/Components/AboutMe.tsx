@@ -1,4 +1,5 @@
 import { MEDIA_SRC_LINKS } from "../Constants/Constants";
+import { motion } from "motion/react";
 
 export default function AboutMe() {
   return (
@@ -14,7 +15,13 @@ export default function AboutMe() {
         className="dark:brightness-80 brightness-90"
       />
 
-      <div className="flex flex-col gap-8 justify-center items-center">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        className="flex flex-col gap-8 justify-center items-center"
+      >
         <h2 className="text-6xl text-center text-zinc-300">Pál Gerzson</h2>
         <h3 className="text-3xl text-amber-400 text-center">
           Full-Stack Webfejlesztő
@@ -33,7 +40,7 @@ export default function AboutMe() {
             height={16}
           />
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 }

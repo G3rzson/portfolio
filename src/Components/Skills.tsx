@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import { SKILL_LIST } from "../Constants/Constants";
 
 export default function Skills() {
@@ -7,8 +8,12 @@ export default function Skills() {
       <div className="flex flex-col flex-wrap justify-center items-center md:items-start gap-4">
         {SKILL_LIST.map((skill) => {
           return (
-            <ul
+            <motion.ul
               key={skill.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
               className="flex md:flex-row flex-col items-center justify-start gap-4"
             >
               <li className="md:text-xl list-disc">{skill.title}</li>
@@ -26,7 +31,7 @@ export default function Skills() {
                   />
                 ))}
               </div>
-            </ul>
+            </motion.ul>
           );
         })}
       </div>
