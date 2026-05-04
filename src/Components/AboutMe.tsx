@@ -26,6 +26,8 @@ export default function AboutMe() {
         <h3 className="text-3xl text-amber-400 text-center">
           Full-Stack Webfejlesztő
         </h3>
+        {/* Önéletrajz */}
+        {/* 
         <a
           href={MEDIA_SRC_LINKS.cv.src}
           target="_blank"
@@ -39,7 +41,7 @@ export default function AboutMe() {
             width={16}
             height={16}
           />
-        </a>
+        </a>*/}
       </motion.div>
     </div>
   );
