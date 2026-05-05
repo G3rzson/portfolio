@@ -3,6 +3,14 @@
 :root {
   --header-scroll-offset: 3rem;
 }
+/* --- SVG/ikon renderelés javítása iOS-re és általánosan --- */
+img[src$=".svg"],
+img[src$=".SVG"] {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  will-change: transform;
+}
 
 html {
   scroll-behavior: smooth;
