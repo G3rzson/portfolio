@@ -67,13 +67,13 @@ export const SKILL_LIST = [
   {
     title: "Fullstack Framework",
     skills: [
-      { path: resolvePublicAsset("skills/nextjs.png"), title: "NextJs" },
+      { path: resolvePublicAsset("skills/nextjs.svg"), title: "NextJs" },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { path: resolvePublicAsset("skills/nodejs.png"), title: "NodeJs" },
+      { path: resolvePublicAsset("skills/nodejs.svg"), title: "NodeJs" },
       { path: resolvePublicAsset("skills/express.svg"), title: "Express" },
     ],
   },
@@ -81,15 +81,15 @@ export const SKILL_LIST = [
   {
     title: "Adatbázisok & ORM & ODM",
     skills: [
-      { path: resolvePublicAsset("skills/mongodb.png"), title: "MongoDB" },
+      { path: resolvePublicAsset("skills/mongodb.svg"), title: "MongoDB" },
       { path: resolvePublicAsset("skills/mongoose.svg"), title: "Mongoose" },
-      { path: resolvePublicAsset("skills/sqlite.png"), title: "SQLite" },
+      { path: resolvePublicAsset("skills/sqlite.svg"), title: "SQLite" },
       { path: resolvePublicAsset("skills/mysql.svg"), title: "MySQL" },
       {
         path: resolvePublicAsset("skills/postgresql.svg"),
         title: "PostgreSQL",
       },
-      { path: resolvePublicAsset("skills/prisma.png"), title: "Prisma" },
+      { path: resolvePublicAsset("skills/prisma.svg"), title: "Prisma" },
     ],
   },
   {

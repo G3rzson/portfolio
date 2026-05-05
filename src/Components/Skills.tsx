@@ -27,7 +27,7 @@ export default function Skills() {
                     alt={`${subSkill.title} icon`}
                     loading="lazy"
                     decoding="async"
-                    className="h-6 md:h-10 w-fit transition-all duration-300 ease-out hover:scale-110 hover:drop-shadow-lg"
+                    className="h-6 md:h-10 w-fit transition-all duration-300 ease-out hover:drop-shadow-lg"
                   />
                 ))}
               </div>
